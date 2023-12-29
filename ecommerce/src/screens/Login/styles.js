@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 10px;
   height: 100vh;
+  font-family: 'Pacifico', cursive;
 `;
 
 export const Content = styled.div`
