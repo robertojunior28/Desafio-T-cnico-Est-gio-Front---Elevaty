@@ -5,6 +5,7 @@
 2 - navegar até a pasta ecommerce</br>
 3 - instalar o yarn com o seguinte comando: yarn install</br>
 4 - estartar o sistema com o seguinte comando: yarn start</br>
+5 - para logar no sistema o usuario e a senha é: admin</br>
 </br>
 O sistema abrirar no seu navegador padrão no endereço: http://localhost:3000
 utilizei o google chrome. 
