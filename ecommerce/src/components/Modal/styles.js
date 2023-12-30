@@ -31,7 +31,7 @@ export const ModalContent = styled.div`
 export const CloseButton = styled.div`
   position: absolute;
   top: 2px;
-  right: 5px;
+  right: 10px;
   cursor: pointer;
   font-size: 40px;
   &:hover {
