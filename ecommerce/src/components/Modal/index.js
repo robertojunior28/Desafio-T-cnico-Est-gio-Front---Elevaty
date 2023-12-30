@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { ModalOverlay, ModalContent, CloseButton } from "./styles"; // Importa os estilos diretamente do arquivo
+import { ModalOverlay, ModalContent, CloseButton } from "./styles";
 
 const Modal = (props) => {
   const modalOverlayRef = useRef(null);
@@ -29,5 +29,3 @@ const Modal = (props) => {
 };
 
 export default Modal;
-
-

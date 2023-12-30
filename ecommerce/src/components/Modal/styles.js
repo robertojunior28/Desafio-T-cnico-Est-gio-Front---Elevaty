@@ -1,7 +1,5 @@
-// styles.js
 import styled from 'styled-components';
 
-// Estilo para a div que envolve o modal
 export const ModalOverlay = styled.div`
   display: none;
   position: fixed;
@@ -18,12 +16,11 @@ export const ModalOverlay = styled.div`
   
 `;
 
-// Estilo para o conteúdo do modal
 export const ModalContent = styled.div`
   
-  background: white;
+  background: #E8F1F3;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.160);
-  border: 2px solid black;
+  border: 2px solid #14293D;
   border-radius: 10px;
   padding: 20px;
   position: relative;
@@ -31,7 +28,6 @@ export const ModalContent = styled.div`
   
 `;
 
-// Estilo para o botão de fechar do modal
 export const CloseButton = styled.div`
   position: absolute;
   top: 10px;

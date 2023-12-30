@@ -5,13 +5,13 @@ export const PaginationButtonsWrapper = styled.div`
   margin: 80px;
   display: flex;
   justify-content: center;
-  z-index: 1; /* Adicione z-index para garantir que fique acima da tabela */
+  z-index: 1;
 `;
 
 export const PaginationButton = styled.button`
   margin: 5px;
   align-items: center;
-  background-color: #046ee5;
+  background-color: #247BA0;
   color: white;
   border: none;
   padding: 8px 12px;

@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #2196F3, #46C2DB);
+    background: #E8F1F3;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif
   }

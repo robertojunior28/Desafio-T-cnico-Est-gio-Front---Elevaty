@@ -4,20 +4,20 @@ export const TableContainer = styled.table`
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
-  border: 1px solid #ddd; /* Alterei a cor da borda para uma tonalidade mais suave */
+  border: 1px solid #ddd;
   border-radius: 5px;
-  overflow: hidden; /* Adicionei overflow:hidden para esconder as bordas arredondadas extras */
+  overflow: hidden;
 `;
 
 export const TableRow = styled.tr`
   border-bottom: 1px solid #ddd;
   &:last-child {
-    border-bottom: none; /* Removi a borda inferior da última linha */
+    border-bottom: none;
   }
 `;
 
 export const TableCell = styled.td`
-  padding: 12px; /* Aumentei o preenchimento para melhorar a aparência */
+  padding: 12px;
   border-right: 1px solid #ddd;
   text-align: left;
 `;
@@ -26,31 +26,32 @@ export const TableHeadCell = styled.th`
   padding: 12px;
   border-right: 1px solid #ddd;
   text-align: left;
-  background-color: #f2f2f2; /* Adicionei uma cor de fundo para o cabeçalho */
+  background-color: #f2f2f2;
 `;
 
 export const TableWrapper = styled.div`
-  background-color: #3178DC;
-  padding: 7px;
+  background-color: #247BA0;
+  padding: 2px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 50%; /* Aumentei a largura máxima */
+  max-width: 50%;
   margin: -25px auto;
   position: relative;
   top: 50px;
   bottom: 50px;
+  
 `;
 
 export const StyledButton = styled.button`
   margin-right: 5px;
   border: 1px solid #ccc;
-  background-color: #046ee5;
+  background-color: #247BA0;
   color: white;
   font-weight: 600;
-  font-size: 12px; /* Aumentei o tamanho da fonte */
-  padding: 10px 16px; /* Ajustei o preenchimento */
+  font-size: 12px;
+  padding: 10px 16px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;

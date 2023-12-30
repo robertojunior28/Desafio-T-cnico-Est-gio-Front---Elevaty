@@ -15,6 +15,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+    document.title = "Ecommerce";
     const fetchProducts = async () => {
       const response = await fetch(
         `https://fakerapi.it/api/v1/products?_quantity=10&_page=${currentPage}&_locale=en_US&_taxes=10&_categories_type=string`
