@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import * as C from "./styles";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const Signin = () => {
@@ -13,6 +13,7 @@ const Signin = () => {
   const [senha, setSenha] = useState("");
   const [error, setError] = useState("");
 
+  
   const handleLogin = () => {
     if (!email | !senha) {
       setError("Preencha todos os campos");
@@ -28,6 +29,11 @@ const Signin = () => {
 
     navigate("/viewProducts");
   };
+
+  useEffect(() => {
+    document.title = "Login";
+  }, []);
+
 
   return (
     <C.Container>

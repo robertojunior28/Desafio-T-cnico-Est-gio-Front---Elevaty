@@ -1,52 +1,36 @@
 import styled from 'styled-components';
 
-export const TableWrapper = styled.div`
-  margin: 20px;
+export const PaginationButtonsWrapper = styled.div`
+  
+  margin: 80px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 `;
 
-export const StyledTable = styled.table`
-  width: 80%; /* ou qualquer largura desejada */
-  border-collapse: collapse;
-  margin-top: 20px;
-`;
-
-export const TableHeader = styled.th`
-  background-color: #f2f2f2;
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #dddddd;
-`;
-
-export const TableData = styled.td`
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #dddddd;
-`;
-
-export const DeleteButton = styled.button`
-  background-color: #e57373;
-  color: #fff;
+export const PaginationButton = styled.button`
+  margin: 5px;
+  align-items: center;
+  background-color: #247BA0;
+  color: white;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #f44336;
+    background-color: #034b8c;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 `;
 
-export const CancelButton = styled.button`
-  background-color: #81c784;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #4caf50;
-  }
+export const CurrentPageSpan = styled.span`
+  align-items: center;
 `;

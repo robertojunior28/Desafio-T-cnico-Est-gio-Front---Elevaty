@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 10px;
   height: 100vh;
+  font-family: 'Pacifico', cursive;
 `;
 
 export const Content = styled.div`
@@ -27,7 +28,7 @@ export const Content = styled.div`
 export const Label = styled.label`
   font-size: 18px;
   font-weight: 600;
-  color: #046EE5;
+  color: #0087A0;
 `;
 
 export const LabelSignup = styled.label`
