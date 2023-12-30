@@ -7,6 +7,14 @@ import {
   PaginationButtonsWrapper,
   PaginationButton,
 } from "./styles";
+import {
+  ModalContentWrapper,
+  ProductImage,
+  ProductTitle,
+  ProductInfo,
+  ProductDescriptionTitle,
+  ProductDescription,
+} from "./styles";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -62,20 +70,30 @@ const Products = () => {
       />
       
       {openModal && (
-        <Modal onClose={closeViewModal}>
-          {selectedProduct && (
-            <div>
-              <img src={Img} alt="Product" style={{ maxWidth: '650px', height: 'auto' }} />
-              <h2 style={{ fontSize: '24px', marginBottom: '10px' }}>{selectedProduct.name}</h2>
-              <p style={{ fontSize: '16px', marginBottom: '10px' }}><span className="title">Preço: </span>{selectedProduct.price}</p>
-              <p style={{ fontSize: '16px', marginBottom: '10px' }}><span className="title">Taxa: </span>{selectedProduct.taxes}</p>
-              <p style={{ fontSize: '16px', marginBottom: '10px' }}><span className="title">Preço Total: </span>{parseFloat(selectedProduct.price) + parseFloat(selectedProduct.taxes)}</p>
-              <h2 style={{ fontSize: '20px', marginTop: '20px', marginBottom: '10px' }}>Descrição do Produto</h2>
-              <p style={{ fontSize: '16px', marginBottom: '20px' }}>{selectedProduct.description}</p>
-            </div>
-          )}
-        </Modal>
-      )}
+  <Modal onClose={closeViewModal}>
+    {selectedProduct && (
+      <ModalContentWrapper>
+        <ProductImage src={Img} alt="Product" />
+        <ProductTitle>{selectedProduct.name}</ProductTitle>
+        <ProductInfo>
+          <span className="title">Preço: </span>
+          {selectedProduct.price}
+        </ProductInfo>
+        <ProductInfo>
+          <span className="title">Taxa: </span>
+          {selectedProduct.taxes}
+        </ProductInfo>
+        <ProductInfo>
+          <span className="title">Preço Total: </span>
+          {parseFloat(selectedProduct.price) +
+            parseFloat(selectedProduct.taxes)}
+        </ProductInfo>
+        <ProductDescriptionTitle>Descrição do Produto</ProductDescriptionTitle>
+        <ProductDescription>{selectedProduct.description}</ProductDescription>
+      </ModalContentWrapper>
+    )}
+  </Modal>
+)}
 
       <PaginationButtonsWrapper>
         <PaginationButton onClick={prevPage} disabled={currentPage === 1}>

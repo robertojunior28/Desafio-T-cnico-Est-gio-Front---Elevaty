@@ -34,3 +34,35 @@ export const PaginationButton = styled.button`
 export const CurrentPageSpan = styled.span`
   align-items: center;
 `;
+
+export const ModalContentWrapper = styled.div`
+  /* Add any common styles for modal content wrapper here */
+`;
+
+export const ProductImage = styled.img`
+  max-width: 450px;
+  height: auto;
+`;
+
+export const ProductTitle = styled.h2`
+  font-size: 24px;
+  margin-bottom: 10px;
+`;
+
+export const ProductInfo = styled.p`
+  font-size: 16px;
+  margin-bottom: 10px;
+`;
+
+export const ProductDescriptionTitle = styled.h2`
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+`;
+
+export const ProductDescription = styled.p`
+  max-width: 490px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  
+`;
