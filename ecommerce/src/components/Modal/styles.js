@@ -6,7 +6,7 @@ export const ModalOverlay = styled.div`
   top: 0;
   left: 0;
   width: 50%;
-  height: 100%;
+  height: 105%;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ export const ModalContent = styled.div`
   background: #E8F1F3;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.160);
   border: 2px solid #14293D;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   position: relative;
   color: black;
@@ -30,8 +30,11 @@ export const ModalContent = styled.div`
 
 export const CloseButton = styled.div`
   position: absolute;
-  top: 10px;
+  top: 2px;
   right: 10px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 40px;
+  &:hover {
+    color: red;
+}
 `;

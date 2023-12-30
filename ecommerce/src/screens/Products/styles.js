@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const PaginationButtonsWrapper = styled.div`
-  
   margin: 80px;
   display: flex;
   justify-content: center;
@@ -33,4 +32,37 @@ export const PaginationButton = styled.button`
 
 export const CurrentPageSpan = styled.span`
   align-items: center;
+`;
+
+export const ModalContentWrapper = styled.div`
+  
+`;
+
+export const ProductImage = styled.img`
+  margin: 15px;
+  max-width: 450px;
+  height: auto;
+`;
+
+export const ProductTitle = styled.h2`
+  margin:10px;
+  font-size: 24px;
+`;
+
+export const ProductInfo = styled.p`
+  font-size: 16px;
+  margin-bottom: 10px;
+`;
+
+export const ProductDescriptionTitle = styled.h2`
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+`;
+
+export const ProductDescription = styled.p`
+  max-width: 470px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  
 `;

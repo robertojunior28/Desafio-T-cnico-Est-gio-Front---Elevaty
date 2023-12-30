@@ -1,13 +1,19 @@
 import { Fragment } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import Login from "../screens/Login";
 import Products from "../screens/Products";
 
 const Private = ({ Item }) => {
   const { signed } = useAuth();
+  const navigate = useNavigate();
 
-  return signed > 0 ? <Item /> : <Login />;
+  if (!signed) {
+    navigate("/");
+    return null;
+  }
+
+  return <Item />;
 };
 
 const RoutesApp = () => {
